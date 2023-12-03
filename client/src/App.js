@@ -1,24 +1,23 @@
-// client/src/App.js
-import React, { useState, useEffect } from 'react';
-import './App.css';
+// src/App.js
 
-function App() {
-  const [message, setMessage] = useState('');
+import React from 'react';
+import LoginPage from './routes/login';
+import { Provider } from 'mobx-react';
+import { AppStore } from './stores/app.store';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-  useEffect(() => {
-    fetch('http://localhost:3001/api') // Update this endpoint if necessary
-      .then((res) => res.text())
-      .then((data) => setMessage(data))
-      .catch((error) => console.error('Error:', error));
-  }, []);
 
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>{message}</p>
-      </header>
-    </div>
+    <Provider appStore={AppStore}>
+      <Router>
+        <Routes>
+          <Route path="/" Component={LoginPage} />
+        </Routes>
+      </Router>
+    </Provider>
   );
-}
+};
 
 export default App;
+

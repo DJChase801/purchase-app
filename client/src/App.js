@@ -5,6 +5,7 @@ import LoginPage from './routes/login';
 import { Provider } from 'mobx-react';
 import { AppStore } from './stores/app.store';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import MainPage from './routes/home';
 
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" Component={LoginPage} />
+          <Route path="/home" Component={MainPage} />
         </Routes>
       </Router>
     </Provider>

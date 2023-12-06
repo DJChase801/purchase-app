@@ -1,19 +1,50 @@
+.app-window {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 100vw;
+}
+
 .login-page {
     display: flex;
     height: 100vh;
     width: 100vw;
     justify-content: center;
     align-items: flex-start;
+    padding-top: 20vh;
 }
 
-.login-stage {
+.home-page {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 5vh;
+}
+
+.nav-bar {
+    height: 100vh;
+    width: 250px;
+    background-color: #000000db;
+    color: turquoise;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.stage {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     color: white;
     border-radius: 20px;
-    margin-top: 200px;
-    box-shadow: 20px 20px 150px 0px rgba(88, 168, 152, 0.539);      
+    margin: 20px 40px;
+    width: 456px;
+    box-shadow: 0px 0px 75px 0px rgba(100, 190, 172, 0.539);      
 }
 
 input {
@@ -31,14 +62,16 @@ p {
     margin-bottom: 5px;
 }
 
-.login-title {
-    background-color: black;
-    font-size: 48px;
+.title {
+    background-color: #000000db;
+    font-size: 32px;
     text-transform: uppercase;
     text-align: center;
     line-height: 1;
     border-radius: 20px 20px 0 0;
     padding: 40px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .fancy {
@@ -60,12 +93,11 @@ p {
     }
 }
 
-.login-button {
-    background-color: #00FDCF;
+.stage-button {
+    background-color: #00fdcfb3;
     color: black;
-    border: 1px solid black;
     border-radius: 5px;
-    padding: 5px;
+    border: none;
     font-size: 18px;
     margin-top: 10px;
     padding: 10px; 
@@ -82,11 +114,56 @@ p {
     text-decoration: underline;
 }
 
-.login-body {
+.stage-body {
     display: flex;
     color: black;
     flex-direction: column;
     align-items: flex-start;
     padding: 20px;
     border-radius: 0 0 20px 20px;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.product-window {
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+    overflow-y: auto;
+    min-height: 250px;
+    min-width: 380px;
+    background-color: gainsboro;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.final-buttons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.accept-button {
+    background-color: #00fdcfaf;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 10px; 
+    cursor: pointer;
+    margin-right: 10px; 
+}
+
+.cancel-button {
+    background-color: #ff0000ae;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 10px; 
+    cursor: pointer;
 }

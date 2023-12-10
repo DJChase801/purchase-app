@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { observer } from 'mobx-react';
 import { AppStoreContext } from '../stores/app.store';
-import Header from '../components/header';
 import style from './page-styles.css';
 
 const LoginPage = () => {

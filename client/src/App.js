@@ -5,7 +5,7 @@ import LoginPage from './routes/login';
 import { Provider } from 'mobx-react';
 import { AppStore } from './stores/app.store';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import MainPage from './routes/home';
+import MainPage from './routes/main';
 
 
 const App = () => {

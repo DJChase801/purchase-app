@@ -1,0 +1,43 @@
+.product-tile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;
+}
+
+.product-tile-img {
+    height: 70px;
+}
+
+.img-box {
+    height: 70px;
+    width: 100px;
+}
+
+.product-details {
+    width: 150px;
+}
+
+.action-button {
+    background-color: transparent;
+    border: none;
+    color: #04aa3b;
+    font-size: large;
+    cursor: pointer;
+}
+
+.remove-action {
+    color: red;
+    background-color: transparent;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+}
+

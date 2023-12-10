@@ -1,3 +1,9 @@
+:root {
+    --main-color: #00fdcfaf;
+    --secondary-color: #ff0000ae;
+    --dark-color: #000000db;
+}
+
 .app-window {
     display: flex;
     flex-direction: row;
@@ -16,24 +22,73 @@
     padding-top: 20vh;
 }
 
-.home-page {
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-top: 5vh;
-}
-
 .nav-bar {
     height: 100vh;
-    width: 250px;
-    background-color: #000000db;
-    color: turquoise;
+    width: 200px;
+    min-width: 200px;
+    background-color: var(--dark-color);
+    color: var(--main-color);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 50px;
+    justify-content: space-between;
+    box-shadow: 0px 0px 45px 0px rgba(100, 190, 172, 0.539);
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 30px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: none;
+    font-size: small;
+    cursor: pointer;
+}
+
+.selected-nav {
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: linear-gradient(to bottom, turquoise, #dce73c); */
+    background-color: var(--main-color);
+    width: 200px;
+    height: 30px;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    border: none;
+}
+
+.nav-company-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.nav-company-logo {
+    width: 180px;
+}
+
+.log-out-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    width: 200px;
+    height: 75px;
+    box-sizing: border-box;
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+    border: none;
 }
 
 .stage {
@@ -41,10 +96,11 @@
     flex-direction: column;
     align-items: flex-start;
     color: white;
-    border-radius: 20px;
-    margin: 20px 40px;
+    border-radius: 10px;
+    margin-left: 80px;
+    margin-top: 40px;
     width: 456px;
-    box-shadow: 0px 0px 75px 0px rgba(100, 190, 172, 0.539);      
+    box-shadow: 0px 0px 45px 0px rgba(100, 190, 172, 0.539); 
 }
 
 input {
@@ -63,12 +119,12 @@ p {
 }
 
 .title {
-    background-color: #000000db;
+    background-color: var(--dark-color);
     font-size: 32px;
     text-transform: uppercase;
     text-align: center;
     line-height: 1;
-    border-radius: 20px 20px 0 0;
+    border-radius: 10px 10px 0 0;
     padding: 40px;
     width: 100%;
     box-sizing: border-box;
@@ -94,7 +150,7 @@ p {
 }
 
 .stage-button {
-    background-color: #00fdcfb3;
+    background-color: var(--main-color);
     color: black;
     border-radius: 5px;
     border: none;
@@ -110,7 +166,7 @@ p {
     cursor: pointer;
     background-color: transparent;
     border: none;
-    color: #04aa8b;
+    color: var(--dark-color);
     text-decoration: underline;
 }
 
@@ -123,47 +179,4 @@ p {
     border-radius: 0 0 20px 20px;
     width: 100%; 
     box-sizing: border-box;
-}
-
-.product-window {
-    display: flex;
-    flex-direction: column;
-    padding: 7px;
-    overflow-y: auto;
-    min-height: 250px;
-    min-width: 380px;
-    background-color: gainsboro;
-    border-radius: 5px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.final-buttons {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    width: 100%;
-}
-
-.accept-button {
-    background-color: #00fdcfaf;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    margin-top: 10px;
-    padding: 10px; 
-    cursor: pointer;
-    margin-right: 10px; 
-}
-
-.cancel-button {
-    background-color: #ff0000ae;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    margin-top: 10px;
-    padding: 10px; 
-    cursor: pointer;
 }

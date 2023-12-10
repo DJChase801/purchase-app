@@ -1,0 +1,88 @@
+
+.final-buttons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.home-page {
+    display: flex;
+    height: 100vh;
+    width: 100vw - 200px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.accept-button {
+    background-color: var(--main-color);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 10px; 
+    cursor: pointer;
+    margin-right: 10px; 
+}
+
+.cancel-button {
+    background-color: var(--secondary-color);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 10px; 
+    cursor: pointer;
+}
+
+.product-window {
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+    overflow-y: auto;
+    height: 370px;
+    min-width: 380px;
+    background-color: gainsboro;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.total {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    margin-right: 25px;
+}
+
+.confirm-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px; 
+    font-size: larger;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 45px 0px rgba(100, 190, 172, 0.539); 
+}
+
+.blur-effect {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: flex-start;
+    align-items: flex-start;
+    filter: blur(5px); /* Adjust the blur radius as needed */
+}

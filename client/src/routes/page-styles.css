@@ -1,5 +1,5 @@
 :root {
-    --main-color: #00fdcfaf;
+    --main-color: #00fdcf;
     --secondary-color: #ff0000ae;
     --dark-color: #000000db;
 }
@@ -100,7 +100,7 @@
     margin-left: 80px;
     margin-top: 40px;
     width: 456px;
-    box-shadow: 0px 0px 45px 0px rgba(100, 190, 172, 0.539); 
+    box-shadow: 0px 0px 45px 0px rgba(100, 190, 172, 0.539);
 }
 
 input {
